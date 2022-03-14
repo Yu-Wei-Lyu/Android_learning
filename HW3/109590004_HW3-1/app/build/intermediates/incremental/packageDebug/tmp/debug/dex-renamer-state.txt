@@ -1,0 +1,4 @@
+#Mon Mar 14 19:23:04 CST 2022
+base.0=C\:\\Users\\user\\Desktop\\MSB-Microprocessor-Based Systems\\APPHW\\HW3\\109590004_HW3-1\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
