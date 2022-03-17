@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">109590004_HW4-2</string>
+    <string name="edittext_uri">https://nportal.ntut.edu.tw/</string>
+    <string name="button_uri">Open Website</string>
+
+    <string name="edittext_loc">106台北市大安區忠孝東路三段1號</string>
+    <string name="button_loc">Open Location</string>
+
+    <string name="edittext_share">I love NTUT so much</string>
+    <string name="button_share">Share This Text</string>
+
+    <string name="button_pic">Take A Picture</string>
+</resources>
