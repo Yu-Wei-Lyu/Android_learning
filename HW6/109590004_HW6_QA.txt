@@ -1,0 +1,15 @@
+109590004 呂育瑋
+Answers
+
+04.2: Input controls
+
+	1. The major difference is that checkboxes enable multiple selections, while a RadioGroup allows only one selection.
+	2. LinearLayout
+	3. isChecked()
+
+04.3: Menus and pickers
+
+	1. menu_main.xml
+	2. onOptionsItemSelected(MenuItem item)
+	3. myAlertBuilder.setTitle("Alert");
+	4. In the onCreateDialog() method in the extension of DialogFragment
