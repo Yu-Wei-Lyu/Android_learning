@@ -1,15 +1,14 @@
 109590004 呂育瑋
 Answers
 
-04.2: Input controls
+04.4: User navigation
 
-	1. The major difference is that checkboxes enable multiple selections, while a RadioGroup allows only one selection.
-	2. LinearLayout
-	3. isChecked()
+	1. 
+	2. 
+	3. 
 
-04.3: Menus and pickers
+04.5: RecyclerView
 
-	1. menu_main.xml
-	2. onOptionsItemSelected(MenuItem item)
-	3. myAlertBuilder.setTitle("Alert");
-	4. In the onCreateDialog() method in the extension of DialogFragment
+	1. You don't need a layout manager with a RecyclerView to handle the hierarchy and layout of View elements.
+	2. RecyclerView.ViewHolder
+	3. View.onClickListener
