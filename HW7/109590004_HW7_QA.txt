@@ -3,9 +3,9 @@ Answers
 
 04.4: User navigation
 
-	1. 
-	2. 
-	3. 
+	1. Empty Activity template
+	2. com.android.support:design
+	3. To provide the Up button for a child screen Activity, declare the parent Activity in the child Activity section of the AndroidManifest.xml file.
 
 04.5: RecyclerView
 

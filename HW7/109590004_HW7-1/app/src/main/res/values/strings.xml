@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright (C) 2018 Google Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">109590004_HW7-1</string>
+    <string name="action_settings">Settings</string>
+    <string name="intro_text">My tea time food</string>
+    <string name="donuts">Click the Donut image</string>
+    <string name="ice_cream_sandwiches">Click the Ice Cream Sandwiches image</string>
+    <string name="froyo">Click the Froyo image</string>
+    <string name="donut_order_message">You ordered a donut.</string>
+    <string name="ice_cream_order_message">You ordered an ice cream sandwich.</string>
+    <string name="froyo_order_message">You ordered a FroYo.</string>
+    <string name="change_dessert">Change dessert</string>
+    <string name="this_is_donuts">This is Donuts</string>
+    <string name="this_is_ice_cream">This is Ice Cream</string>
+    <string name="this_is_froyo">This is FroYo</string>
+</resources>
