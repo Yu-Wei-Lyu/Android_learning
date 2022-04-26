@@ -1,0 +1,15 @@
+109590004 呂育瑋
+Answers
+
+5.1: Drawables, styles, and themes
+
+	1. NinePatchDrawable
+	2. StateListDrawable
+	3. Theme.AppCompat.Light.DarkActionBar
+
+5.2: Material Design
+
+	1. 
+	2. 
+	3. 
+	4. 
