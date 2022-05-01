@@ -9,7 +9,6 @@ Answers
 
 5.2: Material Design
 
-	1. 
-	2. 
-	3. 
-	4. 
+	1. colorPrimaryDark
+	2. Design Support Library
+	3. Any color shade labeled 500.
