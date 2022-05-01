@@ -1,4 +1,0 @@
-#Sat Apr 30 23:50:18 CST 2022
-base.0=C\:\\Users\\user\\Desktop\\MSB-Microprocessor-Based Systems\\APPHW\\MaterialMe\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-renamed.0=classes.dex
-path.0=classes.dex
