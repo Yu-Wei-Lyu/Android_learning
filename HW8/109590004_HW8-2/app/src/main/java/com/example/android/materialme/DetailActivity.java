@@ -18,6 +18,8 @@ package com.example.android.materialme;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.transition.Slide;
+import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -37,6 +39,9 @@ public class DetailActivity extends AppCompatActivity {
      */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
@@ -44,8 +49,11 @@ public class DetailActivity extends AppCompatActivity {
         TextView sportsTitle = findViewById(R.id.titleDetail);
         ImageView sportsImage = findViewById(R.id.sportsImageDetail);
 
+        sportsImage.setTransitionName("transition_img");
+
         // Set the text from the Intent extra.
         sportsTitle.setText(getIntent().getStringExtra("title"));
+
 
         // Load the image using the Glide library and the Intent extra.
         Glide.with(this).load(getIntent().getIntExtra("image_resource",0))

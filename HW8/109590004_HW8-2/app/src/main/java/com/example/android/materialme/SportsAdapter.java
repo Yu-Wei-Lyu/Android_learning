@@ -22,6 +22,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Slide;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -145,6 +147,9 @@ class SportsAdapter extends RecyclerView.Adapter<SportsAdapter.ViewHolder>  {
             detailIntent.putExtra("title", currentSport.getTitle());
             detailIntent.putExtra("image_resource",
                     currentSport.getImageResource());
+
+            mSportsImage.setTransitionName("transition_img");
+
             ActivityOptions options = ActivityOptions.
                     makeSceneTransitionAnimation((Activity) mContext, mSportsImage,"transition_img");
 

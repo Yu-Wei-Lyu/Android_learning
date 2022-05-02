@@ -23,6 +23,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.helper.ItemTouchHelper;
 import android.transition.Explode;
+import android.transition.Slide;
 import android.view.View;
 import android.view.Window;
 
@@ -41,6 +42,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        getWindow().requestFeature(Window.FEATURE_ACTIVITY_TRANSITIONS);
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -108,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Attach the helper to the RecyclerView.
         helper.attachToRecyclerView(mRecyclerView);
+
     }
 
     /**
