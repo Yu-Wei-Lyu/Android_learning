@@ -1,0 +1,15 @@
+109590004 呂育瑋
+Answers
+
+5.3: Adaptive layouts 
+
+	1. Smallest screen width
+	2. res/values-fr-rCA/
+	3. res/values
+
+6.1: Espresso for UI testing
+
+	1. 
+	2. 
+	3. 
+	4. 
