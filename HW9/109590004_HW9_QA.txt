@@ -9,7 +9,6 @@ Answers
 
 6.1: Espresso for UI testing
 
-	1. 
-	2. 
-	3. 
-	4. 
+	1. Match a View, perform an action, and assert and verify the result.
+	2. @RunWith
+	3. onData() to load the adapter and enable the child View to appear on the screen.
