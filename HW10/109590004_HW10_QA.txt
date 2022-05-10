@@ -1,0 +1,22 @@
+109590004 呂育瑋
+Answers
+
+7.1: AsyncTask
+
+	1. 
+		(1)
+		(2)
+	2. 
+		(1)
+		(2)
+		(3)
+	3. 
+
+7.2: AsyncTask and AsyncTaskLoader
+
+	1. 
+	2. 
+	3. 
+	4.
+	5.
+	6.
