@@ -60,13 +60,15 @@ public class SimpleAsyncTask extends AsyncTask<Void,Integer, String> {
         int n = r.nextInt(11);
         // Make the task take long enough that we have
         // time to rotate the phone while it is running.
-        int s = n * 100;
+        int s = n * 200;
         // Sleep for the random amount of time.
         try {
-            for (int i = 0; i < 101; i=i+20) {
-                Thread.sleep(s/5);
-                publishProgress(i);
+            int chunk_time = s/100;
+            for(int i=0;i<chunk_time;i++){
+                publishProgress(i*100/chunk_time);
+                Thread.sleep(s/chunk_time);
             }
+            publishProgress(100);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

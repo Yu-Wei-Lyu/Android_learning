@@ -4,19 +4,22 @@ Answers
 7.1: AsyncTask
 
 	1. 
-		(1)
-		(2)
+	(1) 先設定progressbar的min, max屬性設為0, 100 將setprogress(value)的value值設定在0~100
+	(2)  progressbar的progress屬性 設定介於min ~ max的整數值
 	2. 
-		(1)
-		(2)
-		(3)
-	3. 
+	(1) URL
+	(2) Integer
+	(3) Long
+	3.  Implement onProgressUpdate(). Call publishProgress()
 
 7.2: AsyncTask and AsyncTaskLoader
 
-	1. 
-	2. 
-	3. 
-	4.
-	5.
-	6.
+	1. android.permission.INTERNET
+	2. request ACCESS_NETWORK_STATE permission
+	3. In the manifest: 
+	        In the Activity that displays the results of the task. The Activity must implement LoaderManager.LoaderCallbacks.
+	    In the code:
+	        Use ConnectivityManager to check for an active network before connecting to the network.
+	4. A running AsyncTask becomes disconnected from the activity, but keeps running. A running AsyncTaskLoader automatically reconnects to the activity after the device rotation. The activity displays the results.
+	5. In onCreateLoader() in the activity, create an instance of the AsyncTaskLoader subclass. In the loader's init() method, perform initialization tasks.
+	6. 從AsyncTask implement loadInBackground(), doInBackground() 這兩個 method
