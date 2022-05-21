@@ -1,0 +1,6 @@
+109590004 呂育瑋
+Answers
+1. activity_main.xml
+2. app_name
+3. AVD Manager
+4. Verbose, Debug, Info
