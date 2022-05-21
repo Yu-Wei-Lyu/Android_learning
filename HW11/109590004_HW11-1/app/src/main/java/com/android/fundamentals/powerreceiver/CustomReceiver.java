@@ -43,7 +43,8 @@ public class CustomReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         String intentAction = intent.getAction();
-
+        int num = Integer.parseInt(intent.getStringExtra(MainActivity.EXTRA_MESSAGE));
+        String square_num = Integer.toString(num*num);
         if (intentAction != null) {
             String toastMessage = context.getString(R.string.unknown_action);
             switch (intentAction){
@@ -56,8 +57,8 @@ public class CustomReceiver extends BroadcastReceiver {
                     break;
                 case ACTION_CUSTOM_BROADCAST:
                     toastMessage =
-                            context.getString(R.string.custom_broadcast_toast);
-                    break;
+                            context.getString(R.string.custom_broadcast_toast)+"\nSquare of the Random number: "+square_num;
+                break;
             }
 
             Toast.makeText(context, toastMessage, Toast.LENGTH_SHORT).show();

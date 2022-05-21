@@ -1,0 +1,18 @@
+109590004 呂育瑋
+Answers
+
+7.3: Broadcast receivers
+
+	1. A message that the Android system sends when a system event occurs.
+	2. registerReceiver() and unRegisterReceiver()
+	3. Broadcast receivers can't see or capture the intents used to start an activity.
+	   Using a broadcast intent, you can't find or start an activity.
+	4. LocalBroadcastManager
+
+8.1: Notifications
+
+	1. 
+	2. 
+	3. 
+	4.
+	5.

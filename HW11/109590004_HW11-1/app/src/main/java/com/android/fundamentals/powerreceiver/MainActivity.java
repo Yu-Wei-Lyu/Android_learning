@@ -23,6 +23,9 @@ import android.support.v4.content.LocalBroadcastManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+
+import java.util.Random;
 
 /**
  * The Power Receiver app responds to system broadcasts about the power
@@ -32,16 +35,18 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private CustomReceiver mReceiver = new CustomReceiver();
+    public static final String EXTRA_MESSAGE =
+            "com.example.android.MainActivity.extra.MESSAGE";
 
     // String constant that defines the custom broadcast Action.
     private static final String ACTION_CUSTOM_BROADCAST =
             BuildConfig.APPLICATION_ID + ".ACTION_CUSTOM_BROADCAST";
-
+    private TextView mShowView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        mShowView = (TextView) findViewById(R.id.textView);
         // Define the IntentFilter.
         IntentFilter filter = new IntentFilter();
         // Add system broadcast actions sent by the system when the power is
@@ -63,7 +68,12 @@ public class MainActivity extends AppCompatActivity {
      * LocalBroadcastManager.
      */
     public void sendCustomBroadcast(View view) {
+        Random r = new Random();
+        int num = r.nextInt(20) + 1;
+        String message = Integer.toString(num);
+        mShowView.setText(message);
         Intent customBroadcastIntent = new Intent(ACTION_CUSTOM_BROADCAST);
+        customBroadcastIntent.putExtra(EXTRA_MESSAGE,message);
         LocalBroadcastManager.getInstance(this)
                 .sendBroadcast(customBroadcastIntent);
     }
