@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name">PowerReceiver</string>
+    <string name="app_name">109590004_HW11-1</string>
     <string name="power_connected">Power connected!</string>
     <string name="power_disconnected">Power disconnected!</string>
     <string name="custom_broadcast_toast">Custom Broadcast Received</string>
@@ -23,4 +23,5 @@
     <string name="receiver_on">Receiver On</string>
     <string name="receiver_off">Receiver Off</string>
     <string name="unknown_action">unknown intent action</string>
+    <string name="textview">Welcome</string>
 </resources>
