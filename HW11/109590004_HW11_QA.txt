@@ -6,13 +6,14 @@ Answers
 	1. A message that the Android system sends when a system event occurs.
 	2. registerReceiver() and unRegisterReceiver()
 	3. Broadcast receivers can't see or capture the intents used to start an activity.
-	   Using a broadcast intent, you can't find or start an activity.
 	4. LocalBroadcastManager
 
 8.1: Notifications
 
-	1. 
-	2. 
-	3. 
-	4.
-	5.
+	1. You use notification channels to display notifications to the user in the device status bar. 
+	    You use notification channels to group multiple notifications so that the user can control the notifications' behavior.
+                      Notification channels are not yet available in the Android Support Library package.
+	2. NotificationManager.notify()
+	3. Click listener for the action button click event.
+	4. NotificationCompat.Builder.addAction()
+	5. PendingIntent.getService()
