@@ -1,0 +1,10 @@
+109590004 呂育瑋
+Answers
+
+8.2: The alarm manager
+
+	1. API level 19
+
+8.3: JobScheduler
+
+	1. 

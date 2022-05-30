@@ -15,7 +15,7 @@
   -->
 
 <resources>
-    <string name="app_name">Stand Up!</string>
+    <string name="app_name">109590004_HW12-1</string>
     <string name="alarm_on_toast">Stand Up Alarm On!</string>
     <string name="alarm_off_toast">Stand Up Alarm Off!</string>
     <string name="notification_title">Stand Up Alert</string>

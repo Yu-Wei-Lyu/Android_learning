@@ -65,9 +65,9 @@ public class AlarmReceiver extends BroadcastReceiver {
         // Build the notification
         NotificationCompat.Builder builder = new NotificationCompat.Builder
                 (context, PRIMARY_CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_stand_up)
-                .setContentTitle(context.getString(R.string.notification_title))
-                .setContentText(context.getString(R.string.notification_text))
+                .setSmallIcon(R.drawable.ic_stat_name)
+                .setContentTitle("HEY! Time up!")
+                .setContentText("Now is 11:11 AM")
                 .setContentIntent(contentPendingIntent)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setAutoCancel(true)

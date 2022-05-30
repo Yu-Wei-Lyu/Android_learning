@@ -22,15 +22,15 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
-import java.sql.Time;
+import java.util.Calendar;
 
 
 /**
@@ -88,16 +88,18 @@ public class MainActivity extends AppCompatActivity {
 
                             /*long triggerTime = SystemClock.elapsedRealtime()
                                     + repeatInterval;*/
-                            long triggerTime = System.currentTimeMillis()
-                                    ;
-                            Log.d("time", "onCheckedChanged: " + triggerTime);
+                            Calendar calendar = Calendar.getInstance();
+                            calendar.set(Calendar.AM_PM,Calendar.AM);
+                            calendar.set(Calendar.HOUR,11);
+                            calendar.set(Calendar.MINUTE,11);
+                            calendar.set(Calendar.SECOND,0);
+                            long triggerTime = calendar.getTimeInMillis();
                             // If the Toggle is turned on, set the repeating alarm with
                             // a 15 minute interval.
                             if (alarmManager != null) {
-                                alarmManager.setRepeating
-                                        (AlarmManager.ELAPSED_REALTIME_WAKEUP,
-                                                triggerTime, repeatInterval,
-                                                notifyPendingIntent);
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+                                    alarmManager.setExact(AlarmManager.RTC_WAKEUP,triggerTime,notifyPendingIntent);
+                                }
                             }
                             // Set the toast message for the "on" case.
                             toastMessage = getString(R.string.alarm_on_toast);
