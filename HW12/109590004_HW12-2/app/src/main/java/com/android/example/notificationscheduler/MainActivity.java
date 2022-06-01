@@ -41,15 +41,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mScheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
-        serviceName = new ComponentName(getPackageName(),
-                NotificationJobService.class.getName());
-        builder = new JobInfo.Builder(JOB_ID, serviceName);
     }
 
     /**
      * onClick method that schedules the jobs based on the parameters set.
      */
     public void scheduleJob(View view) {
+        serviceName = new ComponentName(getPackageName(),
+                NotificationJobService.class.getName());
+        builder = new JobInfo.Builder(JOB_ID, serviceName);
         builder.setRequiredNetworkType(JobInfo.NETWORK_TYPE_UNMETERED)
                 .setRequiresDeviceIdle(true)
                 .setRequiresCharging(true)
@@ -77,6 +77,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void downloadNow(View view) {
+        serviceName = new ComponentName(getPackageName(),
+                NotificationJobService.class.getName());
+        builder = new JobInfo.Builder(JOB_ID, serviceName);
         JobInfo myJobInfo = builder.build();
         mScheduler = (JobScheduler) getSystemService(JOB_SCHEDULER_SERVICE);
         if (mScheduler != null) {
