@@ -1,0 +1,31 @@
+<!--
+  ~ Copyright (C) 2018 Google Inc.
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="app_name">109590004_HW12-2</string>
+    <string name="seconds">%1$d s</string>
+    <string name="required_network_type">Press Schedule Job button to trigger Download when\n1. the phone is idle \n2. the phone is connected to power \n3. the phone is connected to Wi-Fi\nNote:The download is only performed once a day</string>
+    <string name="schedule_job">Schedule Job</string>
+    <string name="cancel_jobs">Cancel Jobs</string>
+    <string name="job_service">Performing Work</string>
+    <string name="job_running">Download in progress</string>
+    <string name="job_service_notification">Job Service notification</string>
+    <string name="notification_channel_description">Notifications from Job Service</string>
+    <string name="job_scheduled">Job Scheduled, will run when the phone is idle but connected to power and to Wi-Fi</string>
+    <string name="jobs_canceled">Jobs Canceled</string>
+    <string name="download_now">DOWNLOAD NOW</string>
+    <string name="download_now_txt">download started</string>
+</resources>
