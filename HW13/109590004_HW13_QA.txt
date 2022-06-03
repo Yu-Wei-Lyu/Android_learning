@@ -1,0 +1,12 @@
+109590004 呂育瑋
+Answers
+
+9.1: Shared preferences
+
+	1. onPause() method
+	2. onCreate() method
+	3. No, shared preferences can cover all the features of instance state
+
+9.2: App settings
+
+	1. 
