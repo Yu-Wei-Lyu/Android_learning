@@ -86,11 +86,11 @@ public class MainActivity extends AppCompatActivity {
                 R.xml.pref_account, false);
 
         // Read settings from the shared preferences and display a toast.
-        SharedPreferences sharedPref = PreferenceManager
+        SharedPreferences sharedPref2 = PreferenceManager
                 .getDefaultSharedPreferences(this);
-        String marketPref = sharedPref
-                .getString("sync_frequency", "-1");
-        displayToast(marketPref);
+        String marketPref2 = sharedPref2
+                .getString("list_preference_1", "-1");
+        displayToast(marketPref2);
     }
 
     /**

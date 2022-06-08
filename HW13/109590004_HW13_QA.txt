@@ -5,8 +5,13 @@ Answers
 
 	1. onPause() method
 	2. onCreate() method
-	3. No, shared preferences can cover all the features of instance state
+	3. 製作一個APP瀏覽器。
+	     instance state : 紀錄從開始APP到目前瀏覽過的網頁，並存成一個堆疊，能夠返回上一頁，終止APP後清空堆疊。
+	     shared preferences : 紀錄上一次APP的視窗，並在restart APP後會自動開啟上一次結束APP時瀏覽的網頁。
+	     (就像Google Chrome)
 
 9.2: App settings
 
-	1. 
+	1. strings.xml
+	2. pref_general.xml
+	3. Use a settings activity that extends AppCompatActivity, a fragment that extends PreferenceFragmentCompat, and a SwitchPreferenceCompat for the UI.
